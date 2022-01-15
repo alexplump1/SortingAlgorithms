@@ -1,4 +1,16 @@
-//This is Bubble Sort
+/**
+ * Bubble Sort
+ *
+ * Bubble Sort Algorithm
+ * Runs in O(n^2) runtime
+ *
+ * Sources:
+ *
+ * @author Alex Plump
+ * @version January 15, 2022
+ *
+ **/
+
 public class BubbleSort {
     public static int[] BubbleSort(int[] array) {
         //Creating loop dependent variable

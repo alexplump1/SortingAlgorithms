@@ -11,12 +11,15 @@ public class RunSort {
         int[] myArray = createIntArray(minNum, maxNum, numOfElements);
 
         //Sorting Algorithms
-        myArray = BubbleSort.BubbleSort(myArray);
-
+        //myArray = BubbleSort.BubbleSort(myArray);
+        //myArray = InsertionSort.InsertionSort(myArray);
+        myArray = SelectionSort.SelectionSort(myArray);
 
 
         //Checking correct sorting
+        //printArray(myArray);
         assert(checkSorted(myArray));
+        System.out.println(checkSorted(myArray));
     }
 
     private static int[] createIntArray(int min, int max, int num) {
@@ -33,9 +36,17 @@ public class RunSort {
         if(sortedArray==null){return true;}
         for (int i = 0; i < sortedArray.length-1; i++) {
             if (sortedArray[i] > sortedArray[i+1]) {
+                System.out.printf("Array[%d] = %d; Array[%d] = %d\n", i, sortedArray[i], i+1, sortedArray[i+1]);
                 return false;
             }
         }
         return true;
+    }
+
+    private static void printArray(int[] array) {
+        System.out.printf("Array=[");
+        for (int i = 0; i < array.length-1; i++) {
+            System.out.printf("%d, ", array[i]);
+        } System.out.printf("%d]\n", array[array.length-1]);
     }
 }
