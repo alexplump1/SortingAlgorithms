@@ -14,9 +14,9 @@ public class RunSort {
         myArray = BubbleSort.BubbleSort(myArray);
 
 
+
         //Checking correct sorting
         assert(checkSorted(myArray));
-        System.out.println("Worked");
     }
 
     private static int[] createIntArray(int min, int max, int num) {
