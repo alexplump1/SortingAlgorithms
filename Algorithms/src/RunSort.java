@@ -17,7 +17,8 @@ public class RunSort {
         //myArray = MergeSort.MergeSort(myArray);
         //myArray = CountingSort.CountingSort(myArray, maxNum);     //Can't handle neg. numbers
         //myArray = CountingSort.CountingSort2(myArray);            //Can handle neg. numbers
-        myArray = CountingSort.CountingSort3(myArray);              //Can handle neg. numbers
+        //myArray = CountingSort.CountingSort3(myArray);            //Can handle neg. numbers
+        myArray = BucketSort.BucketSort(myArray, minNum, maxNum);
 
 
 

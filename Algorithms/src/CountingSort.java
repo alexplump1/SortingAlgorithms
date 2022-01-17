@@ -55,8 +55,18 @@ public class CountingSort {
      * This is a modified counting sort.
      * It works with objects when modified.
      * It DOES work with negative numbers.
+     *
+     * **The reason this works with negative numbers is because of the shift variable. Usually,
+     * Counting Sort can only use positive numbers because it directly maps these numbers to indices
+     * in the occurrence list, Ex:
+     * {3,5,6,0,3} ->   0 1 2 3 4 5 6
+     *                 {1,0,0,2,0,1,1}
+     * and negative numbers cause errors as array[-1] does not exist.
+     * Using shift, this allows indices to shift corresponding to the minimum number. Ex:
+     * {-3,5,6,0,-3} ->   -3 -2 -1    0 1 2 3 4 5 6
+     *                    {2, 0, 0,   1,0,0,0,0,1,1}
      * 
-     * Uses space complexity 'n' instead of '2n'
+     * Uses space complexity '2n'
      */
     public static int[] CountingSort2(int[] array) {
         //Getting minimum and maximum values
@@ -102,7 +112,7 @@ public class CountingSort {
     * This is another modified counting sort;
      * It does NOT work with objects, only integers.
      * It DOES work with negative numbers.
-     * It is also easiest to read.
+     * It is also easiest to read.  <---
      * 
      * Uses space complexity 'n' instead of '2n'
      *
