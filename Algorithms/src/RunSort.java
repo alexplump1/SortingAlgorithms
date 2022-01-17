@@ -3,7 +3,7 @@ import java.util.Random;
 public class RunSort {
     public static void main(String[] args) {
         //Variables for creating array
-        int minNum = 0;
+        int minNum = 100;
         int maxNum = 1000;
         int numOfElements = 100;
 
@@ -14,7 +14,11 @@ public class RunSort {
         //myArray = BubbleSort.BubbleSort(myArray);
         //myArray = InsertionSort.InsertionSort(myArray);
         //myArray = SelectionSort.SelectionSort(myArray);
-        myArray = MergeSort.MergeSort(myArray);
+        //myArray = MergeSort.MergeSort(myArray);
+        //myArray = CountingSort.CountingSort(myArray, maxNum);     //Can't handle neg. numbers
+        //myArray = CountingSort.CountingSort2(myArray);            //Can handle neg. numbers
+        myArray = CountingSort.CountingSort3(myArray);              //Can handle neg. numbers
+
 
 
         //Checking correct sorting
