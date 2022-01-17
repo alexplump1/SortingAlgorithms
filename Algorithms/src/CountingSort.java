@@ -116,8 +116,10 @@ public class CountingSort {
      * 
      * Uses space complexity 'n' instead of '2n'
      *
-     * This algorithm was inspired by a discussion in:
-     *      Purdue CS251 - Data Structures and Algorithms - Fall 2021
+     
+       This algorithm was inspired by a discussion in:
+            Purdue CS251 - Data Structures and Algorithms - Fall 2021
+            
      *
      * Explanation of algorithm:
      * Occurrences holds how many times a number showed up
