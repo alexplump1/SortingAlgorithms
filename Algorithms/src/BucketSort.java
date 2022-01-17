@@ -85,6 +85,7 @@ public class BucketSort {
         return array;
     }
 
+    //This could use some optimization
     private static void fillMap(int min, int max) {
         int range = max - min;
         mapping[0] = min;
