@@ -13,12 +13,15 @@ public class RunSort {
         //Sorting Algorithms
         //myArray = BubbleSort.BubbleSort(myArray);
         //myArray = InsertionSort.InsertionSort(myArray);
-        myArray = SelectionSort.SelectionSort(myArray);
+        //myArray = SelectionSort.SelectionSort(myArray);
+        myArray = MergeSort.MergeSort(myArray);
 
 
         //Checking correct sorting
         //printArray(myArray);
         assert(checkSorted(myArray));
+
+        //For visual confirmation
         System.out.println(checkSorted(myArray));
     }
 
