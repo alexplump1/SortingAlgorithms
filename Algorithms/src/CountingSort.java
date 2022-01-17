@@ -5,7 +5,7 @@
  * Runs in O(n + m) runtime
  *  m = size of largest item in array
  *
- * Sources:
+ * See multiple modifications below
  *
  * @author Alex Plump
  * @version January 17, 2022
