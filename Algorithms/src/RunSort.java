@@ -25,10 +25,9 @@ public class RunSort {
         //Number of elements for any array
         int numOfElements = 20;
 
-        //Creating array
+        //Creating arrays
         int[] myArray = createIntArray(minNum, maxNum, numOfElements);
-
-        String[] sArray = createStringArray(maxStringSize, sameSizeStrings, numOfElements);
+        //String[] sArray = createStringArray(maxStringSize, sameSizeStrings, numOfElements);
 
         //Sorting Algorithms
         //myArray = BubbleSort.BubbleSort(myArray);
@@ -40,13 +39,14 @@ public class RunSort {
         //myArray = CountingSort.CountingSort3(myArray);            //Can handle neg. numbers
         //myArray = BucketSort.BucketSort(myArray, minNum, maxNum);
         myArray = QuickSort.QuickSort(myArray, 0, numOfElements - 1);
+        //myArray = ShellSort.ShellSort(myArray);
 
         //Radix sort / topological sort for strings
-        sArray = RadixSort.RadixSort(sArray, maxStringSize);
+        //sArray = RadixSort.RadixSort(sArray, maxStringSize);
 
         //Checking correct sorting
         //printIntArray(myArray);
-        printStrArray(sArray);
+        //printStrArray(sArray);
         assert(checkSorted(myArray));
 
         //For visual confirmation
