@@ -5,12 +5,11 @@
  * Runs in O(n^3/2) runtime
  * This one is weird. Kinda like
  * insertion sort, but with different size jumps.
- * Still a work in progress.
  *
  * Sources:
  *
  * @author Alex Plump
- * @version February XX, 2022
+ * @version February 1, 2022
  *
  **/
 
