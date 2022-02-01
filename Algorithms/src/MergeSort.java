@@ -71,6 +71,6 @@ public class MergeSort {
             }
         }
 
-        return array1;
+        return bigArray;
     }
 }
