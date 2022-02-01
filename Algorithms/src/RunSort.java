@@ -23,7 +23,7 @@ public class RunSort {
         boolean sameSizeStrings = true;
 
         //Number of elements for any array
-        int numOfElements = 20;
+        int numOfElements = 100;
 
         //Creating arrays
         int[] myArray = createIntArray(minNum, maxNum, numOfElements);
@@ -38,14 +38,14 @@ public class RunSort {
         //myArray = CountingSort.CountingSort2(myArray);            //Can handle neg. numbers
         //myArray = CountingSort.CountingSort3(myArray);            //Can handle neg. numbers
         //myArray = BucketSort.BucketSort(myArray, minNum, maxNum);
-        myArray = QuickSort.QuickSort(myArray, 0, numOfElements - 1);
-        //myArray = ShellSort.ShellSort(myArray);
+        //myArray = QuickSort.QuickSort(myArray, 0, numOfElements - 1);
+        myArray = ShellSort.ShellSort(myArray);
 
         //Radix sort / topological sort for strings
         //sArray = RadixSort.RadixSort(sArray, maxStringSize);
 
         //Checking correct sorting
-        //printIntArray(myArray);
+        printIntArray(myArray);
         //printStrArray(sArray);
         assert(checkSorted(myArray));
 
